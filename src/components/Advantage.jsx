@@ -32,8 +32,6 @@ const Advantages = () => {
 
   return (
     <section className="w-full mx-auto lg: px-14 mx-auto ">
-      
-      {/* --- Section Title --- */}
       <div className="py-20 mb-12 ">
         <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
           The MediLink Advantages
