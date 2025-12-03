@@ -1,17 +1,25 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { lazy, Suspense } from "react"
 
-import Login from "./pages/Auth/Login";
-import Register from "./pages/Auth/Register";
-import Layout from "./components/Layout";
+const Login =lazy(() => import("./pages/Auth/Login.jsx"));
+const Register =lazy(() => import("./pages/Auth/Register.jsx"));
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer"
 import LandingLayout from "./components/LandingLayout";
-import HomePage from "./pages/HomePage";
-import LandingPage from "./pages/LandingPage";
-import Dashboard from "./pages/Dashboard";
-import Profile from "./pages/Profile";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
+import HeroSection from "./components/HeroSection.jsx";
+const HomePage = lazy(() => import("./components/HomePage.jsx"));
+const LandingPage = lazy(() => import("./pages/LandingPage.jsx"));
+const Dashboard = lazy(() => import( "./pages/Dashboard.jsx"));
+const Profile = lazy(() => import( "./pages/Profile.jsx"));
+const About = lazy(()=> import("./pages/About"));
+const Contact = lazy(() => import("./pages/Contact.jsx"));
+import ProblemSolved from "./components/ProblemSolved.jsx";
+import Advantage from "./components/Advantage.jsx";
+import Appeal from "./components/Appeal.jsx";
+import FAQPage from "./components/FAQPage.jsx";
 import "./App.css";
+
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -29,74 +37,19 @@ function App() {
   } else {
     return (
       <Router>
-        <Routes>
-          {/* === LANDING PAGES (Minimal Layout) === */}
-          <Route
-            path="/"
-            element={
-              <LandingLayout>
-                <LandingPage />
-              </LandingLayout>
-            }
-          />
-          <Route
-            path="/home"
-            element={
-              <Layout>
-                <HomePage />
-              </Layout>
-            }
-          />
-          <Route
-            path="/login"
-            element={
-              <Layout>
-                <Login />
-              </Layout>
-            }
-          />
-          <Route
-            path="/signup"
-            element={
-              <Layout>
-                <Register />
-              </Layout>
-            }
-          />
-          {/* === OTHER PAGES (Full Layout) === */}
-          <Route
-            path="/dashboard"
-            element={
-              <Layout>
-                <Dashboard />
-              </Layout>
-            }
-          />
-          <Route
-            path="/profile"
-            element={
-              <Layout>
-                <Profile />
-              </Layout>
-            }
-          />
-           <Route path="/about" element={
-          <Layout>
-            <About />
-          </Layout>
-        } /> 
-
-           <Route path="/contact" element={
-          <Layout>
-            <Contact />
-          </Layout>
-        } /> 
-          {/* === REDIRECTS === */}
-          // Home Page at /home
-          {/* === 404 === */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <Navbar />
+        
+          <Routes>
+            <Route path="/dashboard" element={<Dashboard/>} />
+            <Route path="/herosection" element={<HeroSection/>} />
+            <Route path="/faq" element={<FAQPage/>} />
+            <Route path="/appeal" element={<Appeal/>} />
+            <Route path="/problemsolved" element={<ProblemSolved/>} />
+            <Route path="/advantage" element={<Advantage/>} />
+          </Routes>
+          <Footer />
       </Router>
+        
     );
   }
 }

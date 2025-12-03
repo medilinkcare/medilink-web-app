@@ -1,12 +1,10 @@
 import LandingHeader from "./layout/LandingHeader";
-import Footer from "./layout/Footer";
+import Footer from "./Footer";
 
 const LandingLayout = ({children}) => {
   return (
     <>
-      <LandingHeader />
-        {children}
-      <Footer />
+      
     </>
   );
 };
