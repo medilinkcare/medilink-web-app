@@ -1,4 +1,23 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url("./fonts/fonts.css");
 
+
+@font-face {
+  font-family: "Aeonik";
+  src: url("/src/assets/fonts/aeoniktrial-regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url("/src/assets/fonts/aeoniktrial-light.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url("/src/assets/fonts/aeoniktrial-bold.otf") format("opentype");
+  font-weight: 700;
+}

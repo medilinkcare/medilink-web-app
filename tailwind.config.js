@@ -7,8 +7,11 @@ export default {
   theme: {
     extend: {
       colors: {
+        fontFamily:{
+          aeonik: ['Aeonik', 'sans-serif', 'system-ui', 'sans-serif'],
+        }
         
-      }
+      },
     },
   },
   plugins: [],
