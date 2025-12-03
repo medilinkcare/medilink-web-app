@@ -1,6 +1,6 @@
-import linking from "../assets/linking.png";
-import medilink from "../assets/medilink.png";
-import africa from "../assets/africa.png"
+import linking from "../assets/images/linking.png"
+import medilink from "../assets/images/medilink.png";
+import africa from "../assets/images/africa.png"
 
 const Advantages = () => {
   const items = [

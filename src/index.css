@@ -1,7 +1,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-@import url("./fonts/fonts.css");
+@import url('./assets/fonts/fonts.css');
 
 
 @font-face {
