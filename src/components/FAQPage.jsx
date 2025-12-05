@@ -50,7 +50,7 @@ const faqs = [
       <h2 className="text-center text-3xl sm:text-xl md:px-4 font-bold mb-10">
         Frequently Asked Questions
       </h2>
-      <div className="space-y-3 px-16 mx-auto">
+      <div className="space-y-3 px-6 mx-auto">
         {faqs.map((item, i) => (
           <div 
             key={i}
@@ -72,7 +72,7 @@ const faqs = [
       </div>
       <div className="max-w-5xl mx-auto mt-20 p-10 md:p-14 bg-blue-800 rounded-2xl text-white">
 
-        <div className="md:flex justify-center align-center gap-10">
+        <div className="md:flex justify-center align-center sm:text-center gap-10">
           
           <div className="flex-1 align-self-center mb-8 md:mb-0">
             <h2 className="text-3xl font-bold leading-snug">
@@ -86,7 +86,7 @@ const faqs = [
         
           <form className="flex-1 grid grid-cols-1 gap-4 bg-white rounded-3xl p-6">
             <div>
-              <label className="text-sm opacity-90 text-black px-2">Full Name</label>
+              <label className="text-sm font-semibold text-black px-2">Full Name</label>
               <input
                 type="text"
                 className="w-full mt-1 px-4 py-3 border shadow-md rounded-lg text-gray-800 outline-none"
@@ -95,7 +95,7 @@ const faqs = [
             </div>
 
             <div>
-              <label className="text-sm opacity-90 text-black px-2">Email Address</label>
+              <label className="text-sm font-semibolld text-black px-2">Email Address</label>
               <input
                 type="email"
                 className="w-full mt-1 px-3 py-3 rounded-lg shadow-md border text-gray-800 outline-none"

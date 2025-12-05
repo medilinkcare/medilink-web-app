@@ -11,7 +11,7 @@ import IMG_0401_1 from "../assets/IMG_0401_1.png";
 
 const HeroSection = () => {
   return (
-    <section className="h-screen w-sreen bg-blue-10 items-center ">
+    <section className="h-f`ull w-screen bg-blue-10 items-center ">
         <div className=" flex flex-col justify-center max-w-5xl mx-auto text-center py-10">
               <h1 className="text-4xl mx-10 font-aeonik font-semibold mb-8 text-black-900
               md:text-5xl mx-6
@@ -48,7 +48,7 @@ const HeroSection = () => {
     <input
       type="email"
       placeholder="Enter Email Address"
-      className="flex-1 px-5 py-3 outline-none text-gray-700 rounded-full sm:rounded-none"
+      className="flex-1 px-5 sm: px-8 py-3 outline-none text-gray-700 rounded-full sm:rounded-3"
     />
 
     <button className="w-full sm:w-auto px-6 py-3 sm:px-5 sm:py-2 bg-blue-800 hover:bg-blue-600 transition text-white font-medium rounded-full sm:rounded-full">
@@ -81,7 +81,7 @@ const HeroSection = () => {
            
   <div
   className="
-    max-w-5xl mx-auto px-10 py-10 mt-20
+    max-w-5xl mx-auto px-10 py-10 mt-10
     hidden md:grid
     gap-4
     justify-center
