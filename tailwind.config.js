@@ -1,16 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: "class", 
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
-      colors: {
-        fontFamily:{
-          aeonik: ['Aeonik', 'sans-serif', 'system-ui', 'sans-serif'],
-        }
-        
+      fontFamily: {
+        aeonik: ['Aeonik', 'sans-serif'], 
       },
     },
   },

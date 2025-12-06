@@ -9,7 +9,7 @@ const HomePage = lazy(() => import("./pages/HomePage.jsx"));
 const Dashboard = lazy(() => import("./pages/Dashboard.jsx"));
 const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact.jsx"));
-const FAQs = lazy(()=> import("./components/FAQPage.jsx"))
+const FAQPage = lazy(()=> import("./components/FAQPage.jsx"))
 const Advantages = lazy(()=> import("./components/Advantage.jsx"))
 const HowItWorks = lazy(()=> import("./components/HowitWorks.jsx"))
 const WaitList = lazy(()=> import("./components/WaitList.jsx"))
@@ -41,7 +41,7 @@ function App() {
           <Route element={<Layout  />}>
             <Route path="/" element={<LandingPage  />} />
             <Route path="/home" element={<HomePage />} />
-            <Route path="/faq" element={<FAQs />} />
+            <Route path="/faq" element={<FAQPage />} />
             <Route path="/wait-list" element={<WaitList />} />
             <Route path="/features" element={<Advantages />} />
             <Route path="/how-it-works" element={<HowItWorks />} />
