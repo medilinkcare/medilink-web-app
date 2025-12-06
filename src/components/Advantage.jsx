@@ -1,6 +1,8 @@
-import linking from "../assets/linking.png";
-import medilink from "../assets/medilink.png";
-import africa from "../assets/africa.png"
+import linking from "../assets/images/linking.png";
+import medilink from "../assets/images/medilink.png";
+import africa from "../assets/images/africa.png";
+import collab from "../assets/images/collab.png"
+import pointer from "../assets/images/pointer.png"
 
 const Advantages = () => {
   const items = [
@@ -56,7 +58,7 @@ const Advantages = () => {
               <img src={collab} alt="collab" className="w-full h-25 mb-2" />
             )}
             {item.img2 && (
-              <img src={pointer} alt="pointer" className="w-6 h-6 absolute right-20 top-20 mb-2" />
+              <img src={pointer} alt="pointer" className="w-6 h-6 absolute right-16 top-16 mb-2" />
             )}
             </div>
             {item.icon && (
@@ -69,7 +71,7 @@ const Advantages = () => {
                 <img src={medilink} alt="medilink" className="w-full h-25"/>
             )}
             <div>   
-            <h3 className="text-lg font-semibold text-gray-900 px-1 mx-auto mb-2">
+            <h3 className="text-lg font-bold text-gray-900 px-1 mx-auto mb-2">
               {item.title}
             </h3>
             <p className="text-gray-600 text-sm px-1 mx-auto leading-relaxed">

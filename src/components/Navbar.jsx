@@ -32,7 +32,7 @@ const Navbar = () => {
                 to={item === "About Us" ? "/about" : 
                     item === "How it Works" ? "/how-it-works" :
                     item === "Features" ? "/features" : "/faq"}
-                className="text-gray-800 hover:text-blue-600 font-medium text-base transition-colors duration-200"
+                className="text-gray-800 hover:text-blue-600 font-semibold text-base transition-colors duration-200"
               >
                 {item}
               </Link>
