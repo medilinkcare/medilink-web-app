@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/medilinkLogo.png";
+import Dark from "../assets/images/Logo.png";
+
 import { CiMenuFries } from "react-icons/ci";
 import { IoClose } from "react-icons/io5";
 import { MdDarkMode, MdLightMode } from "react-icons/md"; // 🌙 ☀️ icons
@@ -11,7 +13,6 @@ const Navbar = () => {
     localStorage.getItem("theme") === "dark"
   );
 
-  // Apply dark mode to <html>
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
@@ -31,13 +32,18 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16 md:h-20">
 
           {/* Logo */}
+          <div   className="flex items-center justify-center"
+>
           <Link to="/" className="flex-shrink-0">
             <img
-              src={logo}
+              src={darkMode ? Dark : logo}
               alt="Medilink"
-              className="h-40 w-auto object-contain transition-all duration-300"
+              className=" w-[120px] h-40 object-contain transition-all duration-300"
             />
           </Link>
+        </div>  
+           
+          
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6 lg:gap-10 px-6 py-3 rounded-full 
@@ -64,8 +70,6 @@ const Navbar = () => {
 
           {/* Right side buttons */}
           <div className="flex items-center gap-4">
-
-            {/* Dark Mode Toggle */}
             <button
               onClick={() => setDarkMode(!darkMode)}
               className="p-2 rounded-full bg-gray-100 dark:bg-gray-700 
@@ -103,7 +107,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
           isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"

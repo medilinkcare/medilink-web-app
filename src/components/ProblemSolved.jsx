@@ -34,7 +34,7 @@ const ProblemSolved = () => {
 
   return (
     <section className="w-full bg-blue-600 font-aeonik py-10 flex flex-col">
-      <div className="px-20 align-center py-6 border-b border-black border-dashed">
+      <div className="px-6 sm:px-20 align-center py-6 border-b border-black border-dashed">
         <p className="font-bold text-white font-bold text-2xl">The Problems We Are Solving</p>
         <p className="text-sm text-gray-300">The world is advancing. Healthcare should not be left behind.</p>
       </div>
@@ -44,7 +44,7 @@ const ProblemSolved = () => {
           <div
             key={p.id}
             className={`
-              flex items-center justify-between font-aeonik text-white text-4xl border-b border-black border-dashed py-16 px-20
+              flex items-center  justify-between font-aeonik text-white tracking-wide text-4xl border-b border-black border-dashed py-10 px-6 sm:px-20 sm:py-20
               flex-col                 
               md:flex-row    font-aeonik          
               ${index % 2 === 1 ? "md:flex-row-reverse" : ""} 

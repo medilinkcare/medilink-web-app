@@ -108,7 +108,7 @@ const Footer = () => {
 
         <h1 className="text-center opacity-65">
           <span
-            className="text-5xl sm:text-6xl md:text-9xl lg:text-[160px] xl:text-[2px]
+            className="lg:text-9xl sm: text-7xl lg:text-[160px] xl:text-[200px]
                      font-black tracking-tight
                      bg-clip-text text-transparent
                      bg-gradient-to-b from-white to-blue-600

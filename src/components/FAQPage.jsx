@@ -16,7 +16,7 @@ const FAQPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <div className="w-full py-5 dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300">
+    <div className="w-full py-5 sm:px-16 dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300">
       <div className="text-center text-blue-600 dark:text-blue-400 text-sm font-semibold mb-2">
         Similar questions asked
       </div>
@@ -25,7 +25,7 @@ const FAQPage = () => {
         Frequently Asked Questions
       </h2>
 
-      <div className="space-y-3 px-6 mx-auto">
+      <div className="space-y-3 px-6 sm: px-20 mx-auto">
         {faqs.map((item, i) => (
           <div
             key={i}

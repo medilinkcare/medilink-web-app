@@ -3,6 +3,8 @@ import medilink from "../assets/images/medilink.png";
 import africa from "../assets/images/africa.png";
 import collab from "../assets/images/collab.png";
 import pointer from "../assets/images/pointer.png";
+import Frame from "../assets/images/Frame.png"
+
 
 const Advantages = () => {
   const items = [
@@ -34,7 +36,7 @@ const Advantages = () => {
   ];
 
   return (
-    <section className="w-full mx-auto pb-3 lg: px-14  sm: px-6 dark:bg-gray-900 transition-colors duration-300">
+    <section className="w-full mx-auto pb-3 lg: px-6  sm:px-20 dark:bg-gray-900 transition-colors duration-300">
       <div className="py-10 mb-12">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">
           The MediLink Advantages
@@ -45,11 +47,11 @@ const Advantages = () => {
           {" "} leverages modern digital solutions to create an integrated hub for medical professionals.
         </p>
       </div>
-      <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 mb-10">
         {items.map((item, idx) => (
           <div
             key={idx}
-            className="
+            className={`
               bg-white dark:bg-gray-900 
               border border-gray-200 dark:border-gray-700
               shadow-sm hover:shadow-md 
@@ -58,8 +60,8 @@ const Advantages = () => {
               p-6 
               transition-colors duration-300
               flex flex-col
-            "
-          >
+              ${idx < 3 ? "lg:col-span-2" : "lg:col-span-3"}
+             `}>
            <div className="relative">
               {item.img1 && (
                 
@@ -79,7 +81,7 @@ const Advantages = () => {
               <img
                 src={linking}
                 alt=""
-                className="w-60 h-25 mb-2 mx-auto"
+                className="w-25 h-25 mb-2 mx-auto"
               />
             )}
 
@@ -87,20 +89,16 @@ const Advantages = () => {
               <img
                 src={africa}
                 alt="global health"
-                className="w-full h-25 mb-2"
+                className="w-25 h-25 mb-2"
               />
             )}
-          <div className="relative">
+          <div className="">
             {item.img && (
-              <>
               <img
-                src={medilink}
-                alt="medilink"
-                className=" w-full h-25"
+                alt="frame"
+                src={Frame}
+                className=" w-25 h-25 mx-auto"
               />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900"></div>
-
-              </>
             )}
             </div>
             <div>

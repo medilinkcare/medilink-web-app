@@ -2,13 +2,13 @@
 const Waitlist = () => {
   return (
    <section className="w-full py-5 px-5 dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300">
-     <div className="max-w-5xl mx-auto py-10 px-5 md:p-14 bg-blue-800 rounded-2xl text-white">
+     <div className="max-w-5xl mx-auto py-10 px-5 md:p-14 bg-gradient-to-r from-[#0051FF] to-blue-900 rounded-2xl text-white">
       <div className="md:flex justify-center align-center gap-10">
-        <div className="flex-1 align mb-8 md:mb-0">
-          <h2 className="text-3xl font-bold leading-snug dark:text-white">
-            Ready to join the Future of <br /> Healthcare Collaboration?
+        <div className="flex-1 self-center">
+          <h2 className="text-3xl text-center font-bold leading-snug dark:text-white">
+            Ready to join the Future of Healthcare Collaboration?
           </h2>
-          <p className="text-gray-300 mt-2 dark:text-gray-300">
+          <p className="text-gray-300w text-center mb-1 mt-2 dark:text-gray-300">
             Your Seat in the Future of Healthcare Collaboration across Africa
           </p>
         </div>
@@ -38,7 +38,7 @@ const Waitlist = () => {
 
           <button
             type="submit"
-            className="bg-blue-800 w-25 text-white px-2 py-2 rounded-xl justify-self-center font-semibold hover:bg-blue-600 hover:scale-105 transition dark:bg-blue-600 dark:hover:bg-blue-500"
+            className="bg-blue-800 w-25 text-white px-2 py-2 rounded-xl justify-self-center font-bold hover:bg-blue-600 hover:scale-107 transition dark:bg-blue-600 dark:hover:bg-blue-800"
           >
             Join the Waitlist
           </button>
