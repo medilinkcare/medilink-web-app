@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ChevronDown } from "lucide-react";
 
 const FAQPage = () => {
   const faqs = [
@@ -16,30 +17,36 @@ const FAQPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <div className="w-full py-5 sm:px-16 dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300">
+    <div className="w-full py-5 sm:px-16 dark:bg-gray-950 transition-colors duration-300">
       <div className="text-center text-blue-600 dark:text-blue-400 text-sm font-semibold mb-2">
         Similar questions asked
       </div>
 
-      <h2 className="text-center text-3xl sm: text-xl md:px-4 font-bold mb-10 dark:text-white">
+      <h2 className="text-center text-3xl md:px-4 font-bold mb-10 dark:text-white">
         Frequently Asked Questions
       </h2>
 
-      <div className="space-y-3 px-6 sm: px-20 mx-auto">
+      <div className="space-y-3 px-6 sm:px-20 mx-auto">
         {faqs.map((item, i) => (
           <div
             key={i}
-            className="border rounded-xl p-5 shadow-sm hover:shadow-md transition cursor-pointer 
-            bg-white dark:bg-gray-900 dark:border-gray-700"
             onClick={() => setOpenIndex(openIndex === i ? null : i)}
+            className="
+              border rounded-xl p-5 shadow-sm hover:shadow-md transition cursor-pointer
+              bg-white dark:bg-gray-900 dark:border-gray-700
+            "
           >
             <div className="flex justify-between items-center">
               <h3 className="font-semibold text-gray-800 dark:text-gray-200">
                 {item.q}
               </h3>
-              <span className="text-xl dark:text-gray-300">
-                {openIndex === i ? "▲" : "▼"}
-              </span>
+              <ChevronDown
+                className={`
+                  w-5 h-5 text-gray-500 dark:text-gray-300
+                  transition-transform duration-300
+                  ${openIndex === i ? "rotate-180" : ""}
+                `}
+              />
             </div>
 
             {openIndex === i && (
@@ -49,7 +56,7 @@ const FAQPage = () => {
             )}
           </div>
         ))}
-      </div>        
+      </div>
     </div>
   );
 };

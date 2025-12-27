@@ -24,7 +24,7 @@ const HeroSection = () => {
           <p className="mb-5 font-aeonik">
             <span className="text-blue-600 dark:text-blue-400 font-bold">MediLink</span>{" "}
             empowers medical professionals to communicate, collaborate, research,
-            and deliver better care——anytime, anywhere.
+            and deliver better care—anytime, anywhere.
           </p>
         </div>
         <div className=" justify-center space-x-3 mt-4 px-10 sm:px-6">
@@ -72,13 +72,20 @@ const HeroSection = () => {
 
         <div className="
           flex md:hidden lg:hidden
-          overflow-x-auto gap-6 px-10 py-10
+          overflow-x-auto 
+          overflow-x-scroll
+          gap-6 px-10 py-10
+          scrollbar-thin
+          scrollbar-thumb-gray-400
+          scrollbar-track-gray-200
+          dark:scrollbar-thumb-gray-600
+          dark:scrollbar-track-gray-800
         ">
-          <img src={Rectangle_4098} className="rounded-xl sm:hidden" />
-          <img src={Rectangle_4099} className="rounded-xl sm:hidden" />
-          <img src={Rectangle_4103} className="rounded-xl sm:hidden" />
-          <img src={IMG_0400_1} className="rounded-xl sm:hidden" />
-          <img src={IMG_0401_1} className="rounded-xl sm:hidden" />
+          <img src={Rectangle_4098} className="rounded-xl " />
+          <img src={Rectangle_4099} className="rounded-xl " />
+          <img src={Rectangle_4103} className="rounded-xl w-[170px] h-[177px] " />
+          <img src={IMG_0401_1} className="rounded-xl w-[170px] h-[177px]" />
+          <img src={IMG_0400_1} className="rounded-xl" />
           <img src={Rectangle_4100} className="rounded-xl" />
           <img src={Rectangle_4101} className="rounded-xl" />
           <img src={Rectangle_4096} className="rounded-xl" />
@@ -89,7 +96,7 @@ const HeroSection = () => {
             max-w-5xl mx-auto px-10 mt-10
             hidden md:grid gap-4 justify-center place-items-center
             [grid-template-columns:repeat(5,minmax(120px,170px))]
-            [grid-template-rows:repeat(5,minmax(120px,170px))]
+            [grid-template-rows:repeat(4,minmax(120px,170px))]
           "
         >
           <div className="row-start-1 row-end-4 col-start-1 col-end-2 flex flex-col gap-2">
@@ -103,7 +110,7 @@ const HeroSection = () => {
           </div>
 
           <div className="row-start-3 col-start-3 col-end-4">
-            <img src={IMG_0401_1} className="rounded-xl object-cover w-[170px] h-[170px]" />
+            <img src={IMG_0401_1} className="rounded-xl  w-[170px] h-[170px]" />
           </div>
 
           <div className="row-start-2 row-end-5 col-start-4 col-end-5 flex flex-col gap-2">
