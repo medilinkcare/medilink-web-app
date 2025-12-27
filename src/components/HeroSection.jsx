@@ -81,15 +81,15 @@ const HeroSection = () => {
           dark:scrollbar-thumb-gray-600
           dark:scrollbar-track-gray-800
         ">
-          <img src={Rectangle_4098} className="rounded-xl " />
-          <img src={Rectangle_4099} className="rounded-xl " />
+          <img src={Rectangle_4098} className="rounded-xlw-[170px] h-[177px] " />
+          <img src={Rectangle_4099} className="rounded-xl w-[170px] h-[177px] " />
           <img src={Rectangle_4103} className="rounded-xl w-[170px] h-[177px] " />
           <img src={IMG_0401_1} className="rounded-xl w-[170px] h-[177px]" />
           <img src={IMG_0400_1} className="rounded-xl" />
-          <img src={Rectangle_4100} className="rounded-xl" />
-          <img src={Rectangle_4101} className="rounded-xl" />
-          <img src={Rectangle_4096} className="rounded-xl" />
-          <img src={Rectangle_4097} className="rounded-xl" />
+          <img src={Rectangle_4100} className="rounded-xl w-[170px] h-[177px]" />
+          <img src={Rectangle_4101} className="rounded-xl w-[170px] h-[177px]" />
+          <img src={Rectangle_4096} className="rounded-xl w-[170px] h-[177px]" />
+          <img src={Rectangle_4097} className="rounded-xl w-[170px] h-[177px]" />
         </div>
         <div
           className="

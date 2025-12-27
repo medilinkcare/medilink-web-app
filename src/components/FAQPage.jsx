@@ -18,11 +18,11 @@ const FAQPage = () => {
 
   return (
     <div className="w-full py-5 sm:px-16 dark:bg-gray-950 transition-colors duration-300">
-      <div className="text-center text-blue-600 dark:text-blue-400 text-sm font-semibold mb-2">
-        Similar questions asked
+      <div className="text-center">
+        <span className="text-blue-600  dark:text-[#0051FF] text-sm font-semibold mb-2 border border-transparent dark:bg-white  inline-block px-4 py-1 rounded-full">Similar questions asked</span>
       </div>
 
-      <h2 className="text-center text-3xl md:px-4 font-bold mb-10 dark:text-white">
+      <h2 className="text-center text-xl sm:text-3xl md:px-4 font-bold mb-10 dark:text-white">
         Frequently Asked Questions
       </h2>
 
