@@ -47,13 +47,14 @@ const Advantages = () => {
           {" "} leverages modern digital solutions to create an integrated hub for medical professionals.
         </p>
       </div>
+      {/**Grid column */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 mb-10">
         {items.map((item, idx) => (
           <div
             key={idx}
             className={`
-              bg-white dark:bg-gray-900 
-              border border-gray-200 dark:border-gray-700
+              bg-white 
+              border border-gray-200 
               shadow-sm hover:shadow-md 
               rounded-2xl 
               align-center
@@ -62,6 +63,7 @@ const Advantages = () => {
               flex flex-col
               ${idx < 3 ? "lg:col-span-2" : "lg:col-span-3"}
              `}>
+              {/**img 1 */}
            <div className="relative">
               {item.img1 && (
                 
@@ -76,7 +78,7 @@ const Advantages = () => {
                 />
               )}
             </div>
-
+              {/**imgage 2 */}
             {item.icon && (
               <img
                 src={linking}
@@ -84,7 +86,7 @@ const Advantages = () => {
                 className="w-25 h-25 mb-2 mx-auto"
               />
             )}
-
+              {/**image 3 */}
             {item.map && (
               <img
                 src={africa}
@@ -92,6 +94,7 @@ const Advantages = () => {
                 className="w-25 h-25 mb-2"
               />
             )}
+            {/**image 4 */}
           <div className="">
             {item.img && (
               <img
@@ -102,11 +105,11 @@ const Advantages = () => {
             )}
             </div>
             <div>
-              <h3 className="text-lg font-bold text-gray-900 dark:text-white px-1 mx-auto mb-2">
+              <h3 className="text-lg font-bold text-gray-900  px-1 mx-auto mb-2">
                 {item.title}
               </h3>
 
-              <p className="text-gray-600 dark:text-gray-300 text-sm px-1 mx-auto leading-relaxed">
+              <p className="text-gray-600  text-sm px-1 mx-auto leading-relaxed">
                 {item.desc}
               </p>
             </div>
