@@ -3,8 +3,14 @@ import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import logo from "../assets/images/medilinkLogo.png";
 import White from "../assets/images/whiteMed.png";
 
+  
 
 const Footer = () => {
+
+  const scrollToSection = (id) => {
+      const Section = document.getElementById(id);
+      Section?.scrollIntoView({ behavior: "smooth" });
+    };
   return (
     <footer className="bg-[#0051FF] text-white text-center lg:text-center">
       <div className="max-w-8xl mx-auto px-6 py-12 lg:py-16">
@@ -61,11 +67,13 @@ const Footer = () => {
             <div>
               <h3 className="font-semibold mb-4">Services</h3>
               <ul className="space-y-2 text-sm text-blue-100">
-                <li>
-                  <a href="#" className="hover:text-white transition">
+                <li
+                    onClick={() => scrollToSection("features")}
+                    className="cursor-pointer hover:text-white transition"
+                  >
                     Features
-                  </a>
                 </li>
+
                 <li>
                   <a href="#" className="hover:text-white transition">
                     Collaboration
@@ -82,10 +90,8 @@ const Footer = () => {
                     Newsletter
                   </a>
                 </li>
-                <li>
-                  <a href="#" className="hover:text-white transition">
+                <li onClick={() => scrollToSection("faqs")} className="cursor-pointer hover:text-blue-900 transition">
                     FAQs
-                  </a>
                 </li>
               </ul>
             </div>

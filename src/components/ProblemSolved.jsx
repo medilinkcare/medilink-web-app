@@ -33,7 +33,7 @@ const ProblemSolved = () => {
   ];
 
   return (
-    <section className="w-full bg-blue-600 font-aeonik py-10 flex flex-col">
+    <section id="problemsolved" className="w-full bg-blue-600 font-aeonik py-10 flex flex-col">
       <div className="px-6 sm:px-20 align-center py-6 border-b border-black border-dashed">
         <p className="font-bold text-white font-bold text-2xl">The Problems We Are Solving</p>
         <p className="text-sm text-gray-300">The world is advancing. Healthcare should not be left behind.</p>

@@ -11,7 +11,7 @@ import Proof from "../assets/images/Proof.png";
 
 const HeroSection = () => {
   return (
-    <section className="w-full mt-14 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+    <section className="w-full pt-6 mt-10 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
       <div className="flex flex-col justify-center max-w-5xl mx-auto text-center py-10">
         <h1 className="text-4xl md:text-5xl mx-6 font-aeonik font-semibold mb-8">
           Where Healthcare Meets Connection, Collaboration, and Innovation.
@@ -27,8 +27,11 @@ const HeroSection = () => {
             and deliver better care—anytime, anywhere.
           </p>
         </div>
-        <div className=" justify-center space-x-3 mt-4 px-10 sm:px-6">
-            <img src={Proof} alt="proof" className="mx-auto" />
+        <div className="flex justify-center  mt-4 px-6 sm:px-10">
+            <div className="w-[20px] h-[20px] rounded-full border "></div>
+            <div className="w-[20px] h-[20px] rounded-full border "></div>
+            <div className="w-[20px] h-[20px] rounded-full border "></div>
+            <p className="px-1 text-gray-500">Over<span className="text-green-500">+1050</span> people joined the waitlist</p>
           </div>
         <form className="mt-8 px-4 w-full flex justify-center">
           <div className="w-full px-6 max-w-xl">

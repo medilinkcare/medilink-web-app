@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
 
 const FAQPage = () => {
@@ -17,7 +17,7 @@ const FAQPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <div className="w-full py-5 sm:px-16 dark:bg-gray-950 transition-colors duration-300">
+    <section id="faqs" className=" w-full top-0 left-0 right-0 py-5 sm:px-16 dark:bg-gray-950 transition-colors duration-300">
       <div className="text-center">
         <span className="text-blue-600  dark:text-[#0051FF] text-sm font-semibold mb-2 border border-transparent dark:bg-white  inline-block px-4 py-1 rounded-full">Similar questions asked</span>
       </div>
@@ -33,9 +33,7 @@ const FAQPage = () => {
             onClick={() => setOpenIndex(openIndex === i ? null : i)}
             className="
               border rounded-xl p-5 shadow-sm hover:shadow-md transition cursor-pointer
-              bg-white dark:bg-gray-900 dark:border-gray-700
-            "
-          >
+              bg-white dark:bg-gray-900 dark:border-gray-700">
             <div className="flex justify-between items-center">
               <h3 className="font-semibold text-gray-800 dark:text-gray-200">
                 {item.q}
@@ -57,7 +55,7 @@ const FAQPage = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

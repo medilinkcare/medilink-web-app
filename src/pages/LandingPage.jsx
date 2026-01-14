@@ -8,12 +8,16 @@ import Waitlist from "../components/WaitList.jsx";
 const LandingPage = () => {
   return (
     <>
-      <HeroSection />
-      <ProblemSolved />
-      <Advantage />
-      <Appeal />
-      <FAQPage />
-      <Waitlist />
+    <section id="home">
+        <HeroSection />
+        <ProblemSolved />
+        <Advantage />
+        <Appeal />
+        <FAQPage />
+        <section id="waitlist">
+        <Waitlist  />
+        </section>
+      </section>
     </>
   );
 };
